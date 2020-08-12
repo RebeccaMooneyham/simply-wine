@@ -1,3 +1,4 @@
+/* -- General Styles -- */
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #0f0f0d;
@@ -5,40 +6,42 @@ body {
 }
 
 .wrapper,
-.main-nav nav ul {
+#nav-bar nav ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
-#logo {
+/* -- Header (logo and nav) -- */
+#header-img {
 	margin-top: 40px;
 }
 
-#logo img {
+#header-img img {
 	display: block;
 	margin: auto;
 }
 
-.main-nav {
+#nav-bar {
 	margin-top: 30px;
 }
 
-.main-nav ul {
+#nav-bar ul {
 	list-style-type: none;
 }
 
-.main-nav li {
+#nav-bar li {
 	margin-bottom: 15px;
 	text-align: center;
 }
 
-.main-nav a {
+#nav-bar a {
 	text-decoration: none;
 	color: #fff;
 }
 
+/* -- Banner image area -- */
 #banner {
 	margin-top: 50px;
 }
@@ -49,8 +52,203 @@ body {
 	max-width: 87.5%;
 }
 
+/* -- About paragraph -- */
 #about {
 	margin-top: 50px;
 	max-width: 87.5%;
 	line-height: 1.5;
+}
+
+/* -- WINE CARDS -- */
+/* -- Base Styles */
+.card-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+}
+
+.white-card,
+.mixed-card {
+	margin-top: 25px;
+}
+
+.red-card,
+.white-card,
+.mixed-card {
+	height: 320px;
+	width: 280px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+/* -- Card Header -- */
+.card-header {
+	width: 280px;
+	height: 65px;
+	border-radius: 10px 10px 0 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.red-head {
+	background-color: #f6e6e8;
+	border-bottom: solid 2px #aa0919;
+}
+
+.white-head {
+	background-color: #f1f5e5;
+	border-bottom: solid 2px #71a100;
+}
+
+.mixed-head {
+	background-color: #fdf5e5;
+	border-bottom: solid 2px #eda200;
+}
+
+.card-header .wine-icon {
+	width: 48px;
+	height: 51px;
+	margin-top: 7px;
+	margin-left: 10px;
+}
+
+/* -- Card Title -- */
+.title-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	flex-basis: 100%;
+}
+
+.card-title {
+	margin-top: 15px;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #2c0d12;
+	font-weight: bold;
+}
+
+.red-head .card-title {
+	padding-left: 50px;
+}
+.white-head .card-title {
+	padding-left: 35px;
+}
+.mixed-head .card-title {
+	padding-left: 40px;
+}
+
+/* -- Card Body -- */
+.card-body p {
+	color: #2c0d12;
+	margin-top: 10px;
+	margin-left: 15px;
+	line-height: 1.5;
+}
+
+.wine-selection {
+	display: flex;
+	flex-direction: row;
+}
+
+.wine-selection img {
+	width: 19px;
+	height: 18px;
+	margin-left: 15px;
+	margin-top: 2px;
+}
+
+p.varietal-name {
+	margin: 0 6px;
+}
+
+/* -- Card Footer -- */
+.card-footer {
+	display: flex;
+	flex-direction: row;
+}
+
+.price-container {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	flex-basis: 100%;
+}
+
+.card-price {
+	color: #0f0f0d;
+	font-size: 24px;
+	margin: 20px 0 0 114px;
+}
+
+img.shopping-cart {
+	width: 40px;
+	height: 40px;
+	margin-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* -- Video -- */
+#video {
+	width: 280px;
+	height: 158px;
+	background-color: white;
+	margin-top: 50px;
+}
+
+/* -- Form -- */
+#form {
+	margin-top: 50px;
+}
+
+input {
+	width: 280px;
+	height: 40px;
+	padding-left: 10px;
+	display: block;
+	margin: auto;
+}
+
+.submit-button {
+	display: block;
+	margin: 15px auto;
+	width: 143px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 10px;
+	background-image: linear-gradient(#f0d1a0, #e27301);
+	border: none;
+	box-shadow: 1px 1px 2px 0 rgba(255, 255, 255, 0.45);
+	cursor: pointer;
+}
+
+.coupon {
+	width: 280px;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+/* -- Social Media -- */
+.social {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.social p {
+	margin-top: 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.social-icons img {
+	width: 48px;
+	height: 48px;
+	padding-left: 25px;
+}
+
+img.fb {
+	padding-left: 0;
 }

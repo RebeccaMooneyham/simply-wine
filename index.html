@@ -9,14 +9,14 @@
 </head>
 <body>
   <div class="wrapper">
-    <header id="home">
-      <div id="logo"><img src="images/Logo.png" alt="simply wine logo"></div>
-      <nav class="main-nav">
+    <header id="header">
+      <div id="header-img"><img src="images/Logo.png" alt="simply wine logo"></div>
+      <nav id="nav-bar">
         <ul>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#wine">Wine Selection</a></li>
-          <li><a href="#video">Featured Video</a></li>
-          <li><a href="#coupon">Coupon</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#wine" class="nav-link">Wine Selection</a></li>
+          <li><a href="#video" class="nav-link">Featured Video</a></li>
+          <li><a href="#form" class="nav-link">Coupon</a></li>
         </ul>
       </nav>
     </header>
@@ -26,11 +26,145 @@
     <section id="about">
       <p>Our team of sommeliers hand select the best national and international wines and ship them to you once a month. Each month you can choose to receive four bottles of red wine, four bottles of white wine, or two bottles of reds and two bottles of whites. Along with your wine, we send food pairing suggestions. As a special bonus, shipping is always free.</p>
     </section>
-    <section id="wine">
-      <div class="reds"></div>
-      <div class="whites"></div>
-      <div class="mixed"></div>
+    
+    <section id="wine" class="card-container">
+      <div class="red-card"> <!-- red card start -->
+        <div class="card-header red-head"> <!-- red header start-->
+          <img class="wine-icon" src="images/icons/bottle-opener-icon.png" alt="icon of a wine bottle corkscrew opener">
+          <div class="title-container">
+            <p class="card-title">reds</p>
+          </div>
+        </div> <!-- red header end-->
+        <div class="card-body"> <!-- red card body start -->
+          <p>Each month we will send you one bottle of each of the following varietals:</p>
+          <div class="varietals">
+            <div class="wine-selection">
+              <img src="images/icons/red-checkmark-icon.png" alt="red checkmark">
+              <p class="varietal-name">Cabernet Sauvignon</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/red-checkmark-icon.png" alt="red checkmark">
+              <p class="varietal-name">Pinot Noir</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/red-checkmark-icon.png" alt="red checkmark">
+              <p class="varietal-name">Merlot</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/red-checkmark-icon.png" alt="red checkmark">
+              <p class="varietal-name">Syrah</p>
+            </div>
+          </div>
+        </div> <!-- red card body end-->
+        <div class="card-footer"> <!-- red card footer start -->
+          <div class="price-container">
+            <p class="card-price">$69</p>
+          </div>
+          <img class="shopping-cart" src="images/icons/shopping-cart-icon-lg.png" alt="shopping cart icon"> 
+        </div> <!-- red card footer end -->
+      </div> <!-- red card end-->
+      <div class="white-card"> <!-- white card start -->
+        <div class="card-header white-head"> <!-- white header start -->
+          <img class="wine-icon" src="images/icons/grape-leaf-icon.png" alt="icon of a wine bottle corkscrew opener">
+          <div class="title-container">
+            <p class="card-title">whites</p>
+          </div>
+        </div> <!-- white header end-->
+        <div class="card-body"> <!-- white card body start -->
+          <p>Each month we will send you one bottle of each of the following varietals:</p>
+          <div class="varietals">
+            <div class="wine-selection">
+              <img src="images/icons/green-checkmark-icon.png" alt="green checkmark">
+              <p class="varietal-name">Chardonnay</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/green-checkmark-icon.png" alt="green checkmark">
+              <p class="varietal-name">Pinot Grigio</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/green-checkmark-icon.png" alt="green checkmark">
+              <p class="varietal-name">Sauvignon Blanc</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/green-checkmark-icon.png" alt="green checkmark">
+              <p class="varietal-name">Riesling</p>
+            </div>
+          </div>
+        </div> <!-- white card body end-->
+        <div class="card-footer"> <!-- white card footer start -->
+          <div class="price-container">
+            <p class="card-price">$69</p>
+          </div>
+          <img class="shopping-cart" src="images/icons/shopping-cart-icon-lg.png" alt="shopping cart icon"> 
+        </div> <!-- white card footer end -->
+      </div> <!-- white card end-->
+      <div class="mixed-card"><!-- mixed cart start-->
+        <div class="card-header mixed-head"> <!-- mixed header start -->
+          <img class="wine-icon" src="images/icons/corks-icon.png" alt="icon of a wine bottle corkscrew opener">
+          <div class="title-container">
+            <p class="card-title">mixed</p>
+          </div>
+        </div> <!-- mixed header end-->
+        <div class="card-body"> <!-- mixed card body start -->
+          <p>Each month we will send you one bottle of each of the following varietals:</p>
+          <div class="varietals">
+            <div class="wine-selection">
+              <img src="images/icons/orange-checkmark-icon.png" alt="orange checkmark">
+              <p class="varietal-name">Cabernet Sauvignon</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/orange-checkmark-icon.png" alt="orange checkmark">
+              <p class="varietal-name">Chardonnay</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/orange-checkmark-icon.png" alt="orange checkmark">
+              <p class="varietal-name">Pinot Grigio</p>
+            </div>
+            <div class="wine-selection">
+              <img src="images/icons/orange-checkmark-icon.png" alt="orange checkmark">
+              <p class="varietal-name">Pinot Noir</p>
+            </div>
+          </div>
+        </div> <!-- mixed card body end-->
+        <div class="card-footer"> <!-- mixed card footer start -->
+          <div class="price-container">
+            <p class="card-price">$69</p>
+          </div>
+          <img class="shopping-cart" src="images/icons/shopping-cart-icon-lg.png" alt="shopping cart icon"> 
+        </div> <!-- card footer end -->
+      </div> <!-- mixed card end-->
     </section>
+    
+    <div id="video">
+      <iframe width="280" height="158" src="https://www.youtube.com/embed/xuCiN64Z7Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="form-wrapper">
+      <form id="form">
+        <div class="group">
+          <label for="email">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </label>
+        </div>
+        <div class="group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+      <p class="coupon">
+        Enter your email to get a coupon for 50% off your first order.
+      </p>
+    </div>
+
+    <div class="social">
+      <p>Follow Us</p>
+      
+      <div class="social-icons">
+        <img src="images/icons/fb-icon-64px.png" alt="facebook icon" class="fb">
+        <img src="images/icons/twitter-icon-64px.png" alt="twitter icon" class="twitter">
+        <img src="images/icons/instagram-icon-64px.png" alt="instagram icon" class="instagram">
+        <img src="images/icons/youtube-icon-64px.png" alt="youtube icon" class="youtube">
+      </div>
+    </div>
 
   </div> <!-- wrapper end -->
 </body>
