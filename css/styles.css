@@ -29,6 +29,7 @@ body {
 
 #nav-bar ul {
 	list-style-type: none;
+	padding: 0;
 }
 
 #nav-bar li {
@@ -191,10 +192,13 @@ img.shopping-cart {
 
 /* -- Video -- */
 #video {
-	width: 280px;
-	height: 158px;
-	background-color: white;
 	margin-top: 50px;
+}
+
+#video iframe {
+	height: 158px;
+	width: 280px;
+	border: none;
 }
 
 /* -- Form -- */
@@ -229,6 +233,7 @@ input {
 	width: 280px;
 	text-align: center;
 	margin-bottom: 0;
+	line-height: 1.5;
 }
 
 /* -- Social Media -- */
@@ -251,4 +256,70 @@ input {
 
 img.fb {
 	padding-left: 0;
+}
+
+/* ---- Media Queries ---- */
+@media only screen and (min-width: 768px) {
+	.wrapper {
+		max-width: 650px;
+		margin: auto;
+	}
+
+	#header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 568.75px;
+	}
+
+	.menu {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu li a {
+		display: block;
+		padding: 30px 20px;
+		flex: 1;
+	}
+
+	#about {
+		max-width: 75%;
+	}
+
+	#video iframe {
+		width: 648px;
+		height: 365px;
+	}
+
+	.form-wrapper {
+		width: 484px;
+	}
+
+	.group {
+		display: flex;
+		flex-direction: row;
+	}
+	input {
+		width: 314px;
+	}
+	.submit-button {
+		width: 143px;
+		margin: 0 0 0 25px;
+	}
+	.coupon {
+		width: 484px;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.wrapper {
+		max-width: 872px;
+		margin: auto;
+	}
+
+	#header {
+		width: 763px;
+	}
 }

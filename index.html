@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -10,15 +11,15 @@
 <body>
   <div class="wrapper">
     <header id="header">
-      <div id="header-img"><img src="images/Logo.png" alt="simply wine logo"></div>
+      <div id="header-img"><img src="images/Logo.png" alt="simply wine logo"></div>  
       <nav id="nav-bar">
-        <ul>
-          <li><a href="#about" class="nav-link">About Us</a></li>
-          <li><a href="#wine" class="nav-link">Wine Selection</a></li>
-          <li><a href="#video" class="nav-link">Featured Video</a></li>
+        <ul class="menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#wine" class="nav-link">Wines</a></li>
+          <li><a href="#video" class="nav-link">Video</a></li>
           <li><a href="#form" class="nav-link">Coupon</a></li>
         </ul>
-      </nav>
+      </nav>   
     </header>
       <div id="banner">
         <img src="images/banner-img-desktopHD.jpg" alt="woman drinking glass of red wine">
@@ -136,17 +137,15 @@
     </section>
     
     <div id="video">
-      <iframe width="280" height="158" src="https://www.youtube.com/embed/xuCiN64Z7Xk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xuCiN64Z7Xk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
     <div class="form-wrapper">
-      <form id="form">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
         <div class="group">
           <label for="email">
             <input type="email" id="email" name="email" placeholder="Email" required>
           </label>
-        </div>
-        <div class="group">
           <button type="submit" id="submit" class="submit-button">Submit</button>
         </div>
       </form>
@@ -159,10 +158,18 @@
       <p>Follow Us</p>
       
       <div class="social-icons">
-        <img src="images/icons/fb-icon-64px.png" alt="facebook icon" class="fb">
-        <img src="images/icons/twitter-icon-64px.png" alt="twitter icon" class="twitter">
-        <img src="images/icons/instagram-icon-64px.png" alt="instagram icon" class="instagram">
-        <img src="images/icons/youtube-icon-64px.png" alt="youtube icon" class="youtube">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="images/icons/fb-icon-64px.png" alt="facebook icon" class="fb">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="images/icons/twitter-icon-64px.png" alt="twitter icon" class="twitter">
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="images/icons/instagram-icon-64px.png" alt="instagram icon" class="instagram">
+        </a>
+        <a href="http://youtube.com/" target="_blank">
+          <img src="images/icons/youtube-icon-64px.png" alt="youtube icon" class="youtube">
+        </a>
       </div>
     </div>
 
